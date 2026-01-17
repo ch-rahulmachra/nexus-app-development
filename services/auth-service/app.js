@@ -9,8 +9,10 @@ app.use(express.json());
 
 app.use("/auth", require("./routes/authRoutes"));
 
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok", service: "auth-service" });
+});
+
 sequelize.sync().then(() => {
-  app.listen(process.env.PORT, () =>
-    console.log(`Auth service running on ${process.env.PORT}`)
-  );
+  app.listen(4000, () => console.log("Auth service running on 4000"));
 });

@@ -1,0 +1,16 @@
+{
+  "name": "reporting-service",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sequelize": "^6.37.1",
+    "mysql2": "^3.9.7",
+    "dotenv": "^16.4.5",
+    "axios": "^1.6.7",
+    "cors": "^2.8.5"
+  }
+}

@@ -5,7 +5,7 @@ export default function Dashboard() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    userApi.get("/users/me").then(res => setUser(res.data));
+    userApi.get("/me").then(res => setUser(res.data));
   }, []);
 
   return <pre>{JSON.stringify(user, null, 2)}</pre>;
