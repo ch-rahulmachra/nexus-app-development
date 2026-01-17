@@ -8,5 +8,5 @@ on:
     workflow_dispatch:
 jobs:
     call-devops-pipeline:
-        uses: ch-rahulmachra/nexus-app-devops/.github/workflows/nexus_cicd_workflow.yml
+        uses: ch-rahulmachra/nexus-app-devops/.github/workflows/nexus_reusable_workflow.yml@main
         secrets: inherit
