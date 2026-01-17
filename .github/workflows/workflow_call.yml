@@ -9,4 +9,14 @@ on:
 jobs:
     call-devops-pipeline:
         uses: ch-rahulmachra/nexus-app-devops/.github/workflows/nexus_reusable_workflow.yml@main
-        secrets: inherit
+        with:
+            FRONT_IMAGE: temp_front_image
+            AUTH_IMAGE: temp_auth_image
+            REPORTING_IMAGE: temp_reporting_image
+            TASK_IMAGE: temp_task_image
+            EXPENSE_IMAGE: temp_expense_image
+            USER_IMAGE: temp_user_image
+            APPROVAL_IMAGE: temp_approval_image
+            NOTIFICATION_IMAGE: temp_notification_image
+            PROJECT_IMAGE: temp_project_image
+            AUDIT_IMAGE: temp_audit_image
